@@ -1,0 +1,164 @@
+.admin-manage-artworks-page {
+  padding: 40px;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.admin-manage-artworks-page h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: #333;
+}
+
+.page-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.artworks-table-container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.admin-manage-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-manage-table thead {
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.admin-manage-table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.admin-manage-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: 0.3s ease;
+}
+
+.admin-manage-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.admin-manage-table td {
+  padding: 15px;
+  color: #333;
+  font-size: 14px;
+}
+
+.artwork-thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.price-cell {
+  font-weight: 600;
+  color: #c68375;
+}
+
+.artwork-status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.artwork-status.active {
+  background-color: #4caf50;
+}
+
+.artwork-status.flagged {
+  background-color: #ff9800;
+}
+
+.artwork-status.under-review {
+  background-color: #667eea;
+}
+
+.action-cell {
+  display: flex;
+  gap: 8px;
+}
+
+.view-artwork-btn,
+.delete-artwork-btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.view-artwork-btn {
+  background-color: #667eea;
+  color: white;
+}
+
+.view-artwork-btn:hover {
+  background-color: #5568d3;
+}
+
+.delete-artwork-btn {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.delete-artwork-btn:hover {
+  background-color: #b71c1c;
+}
+
+@media (max-width: 1024px) {
+  .admin-manage-table {
+    font-size: 13px;
+  }
+
+  .admin-manage-table th,
+  .admin-manage-table td {
+    padding: 12px;
+  }
+
+  .artwork-thumbnail {
+    width: 50px;
+    height: 50px;
+  }
+
+  .action-cell {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-manage-artworks-page {
+    padding: 20px;
+  }
+
+  .artworks-table-container {
+    overflow-x: auto;
+  }
+
+  .admin-manage-table {
+    min-width: 700px;
+  }
+}

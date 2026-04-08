@@ -1,0 +1,127 @@
+.artist-dashboard {
+  padding: 40px;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.artist-dashboard h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #333;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-left: 5px solid #c68375;
+  transition: 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.stat-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #c68375;
+}
+
+/* Recent Works Section */
+.recent-works-section {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.recent-works-section h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #333;
+}
+
+.recent-works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.work-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.work-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.work-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.work-card h3 {
+  padding: 15px;
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.work-price {
+  padding: 0 15px;
+  margin: 5px 0;
+  font-weight: bold;
+  color: #c68375;
+}
+
+.work-date {
+  padding: 0 15px 15px;
+  margin: 0;
+  font-size: 12px;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .artist-dashboard {
+    padding: 20px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .recent-works-grid {
+    grid-template-columns: 1fr;
+  }
+}

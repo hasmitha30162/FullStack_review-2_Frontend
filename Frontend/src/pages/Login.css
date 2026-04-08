@@ -1,0 +1,129 @@
+/* Full screen dark gradient background */
+.login-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ebc4b2, #ffcdb2);
+}   
+   
+/* Card */
+.login-card {
+  width: 380px;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(240, 244, 245, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+/* Title */
+.login-title {
+  color: black;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Inputs */
+.login-input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+
+  /* IMPORTANT PART */
+  border: 2px solid rgba(15, 3, 3, 0.3);
+
+  background: rgba(255, 255, 255, 0.08);
+  color: black;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.login-input::placeholder {
+  color: rgba(17, 16, 16, 0.6);
+}
+
+.login-input:focus {
+  border: 2px solid #988e86;
+  box-shadow: 0 0 12px rgba(55, 53, 52, 0.7);
+  transform: scale(1.02);
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  background: #1877f2;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: 0.3s ease;
+}
+
+.login-button:hover {
+  background: #145dbf;
+}
+
+/* Forgot password */
+.forgot-password {
+  color: black;
+  margin: 18px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Divider */
+.divider {
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  background: rgba(13, 13, 13, 0.3);
+  top: 50%;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+/* Register button */
+.register-button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  border: 1px solid #00bfff;
+  background: transparent;
+  color: #00bfff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.register-button:hover {
+  background: #00bfff;
+  color: white;
+}

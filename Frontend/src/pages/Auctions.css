@@ -1,0 +1,13 @@
+.auctions-container {
+  height: 90vh; /* full page height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+}
+
+.auctions-container h2 {
+  font-size: 28px;
+  color: #c68375;
+  font-weight: 600;
+}

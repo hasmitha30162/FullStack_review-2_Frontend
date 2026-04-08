@@ -1,0 +1,15 @@
+.manage-artists-page {
+  /* Inherits from ManageUsers.css */
+}
+
+.artist-status.pending {
+  background-color: #ff9800;
+}
+
+.artist-status.approved {
+  background-color: #4caf50;
+}
+
+.artist-status.blocked {
+  background-color: #d32f2f;
+}

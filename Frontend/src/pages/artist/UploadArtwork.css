@@ -1,0 +1,161 @@
+.upload-page {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.upload-container {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.upload-container h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #333;
+}
+
+.upload-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Image Upload */
+.image-upload-box {
+  position: relative;
+  border: 2px dashed #c68375;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  background-color: #f9f9f9;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.image-upload-box:hover {
+  border-color: #b8704b;
+  background-color: #fff5f1;
+}
+
+.image-input {
+  display: none;
+}
+
+.upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.upload-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.upload-text {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Form Inputs */
+.form-input,
+.form-textarea {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #999;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #c68375;
+  box-shadow: 0 0 8px rgba(198, 131, 117, 0.3);
+}
+
+/* Buttons */
+.form-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.upload-btn,
+.cancel-btn {
+  flex: 1;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.upload-btn {
+  background-color: #c68375;
+  color: white;
+}
+
+.upload-btn:hover {
+  background-color: #b8704b;
+  transform: scale(1.02);
+}
+
+.cancel-btn {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.cancel-btn:hover {
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 600px) {
+  .upload-container {
+    padding: 25px;
+  }
+
+  .upload-container h1 {
+    font-size: 22px;
+  }
+}
