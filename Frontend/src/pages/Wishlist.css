@@ -1,4 +1,4 @@
-.artworks-page {
+.wishlist-page {
   padding: 40px;
   min-height: 100vh;
   background-color: #f8f8f8;
@@ -10,35 +10,31 @@
   font-size: 28px;
 }
 
-/* Wishlist Toast Message */
-.wishlist-toast {
-  position: fixed;
-  top: 100px;
-  right: 20px;
-  background-color: #c68375;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 25px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  font-weight: 500;
-  font-size: 14px;
-  z-index: 1000;
-  animation: slideIn 0.3s ease-out;
+/* Empty Wishlist */
+.empty-wishlist {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-@keyframes slideIn {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+.empty-wishlist p {
+  font-size: 18px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.empty-wishlist p:first-child {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
 }
 
 /* Grid Layout */
-.artworks-grid {
+.wishlist-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 25px;
@@ -75,6 +71,12 @@
   color: #c68375;
 }
 
+.artist {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
 /* Buttons */
 .card-buttons {
   display: flex;
@@ -82,17 +84,19 @@
   gap: 10px;
 }
 
-.wishlist-btn {
+.remove-btn {
   flex: 1;
   padding: 8px;
   border-radius: 20px;
-  border: 1px solid #c68375;
+  border: 1px solid #d32f2f;
   background: transparent;
+  color: #d32f2f;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.wishlist-btn:hover {
-  background-color: #c68375;
+.remove-btn:hover {
+  background-color: #d32f2f;
   color: white;
 }
 
@@ -104,13 +108,9 @@
   background-color: black;
   color: white;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .buy-btn:hover {
   opacity: 0.8;
-}
-.artist {
-  font-size: 14px;
-  margin-bottom: 8px;
-  color: #555;
 }

@@ -15,6 +15,7 @@ const AdminDashboard = () => {
   ];
 
   return (
+    
     <div className="admin-dashboard">
       <h1>Admin Dashboard</h1>
       <p className="dashboard-subtitle">Platform Overview and Management</p>

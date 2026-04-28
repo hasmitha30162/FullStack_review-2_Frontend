@@ -12,6 +12,7 @@ import UserArtists from "./pages/Artists";
 import UserRegister from "./pages/Register";
 import UserWhatsNew from "./pages/Whatsnew";
 import UserAuctions from "./pages/Auctions";
+import Wishlist from "./pages/Wishlist";
 
 // Common
 import RoleSelection from "./pages/common/RoleSelection";
@@ -88,6 +89,14 @@ function App() {
             element={
               <ProtectedRoute requiredRole="user">
                 <UserAuctions />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/user/wishlist"
+            element={
+              <ProtectedRoute requiredRole="user">
+                <Wishlist />
               </ProtectedRoute>
             }
           />
