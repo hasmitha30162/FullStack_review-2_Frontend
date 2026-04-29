@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./WhatsNew.css";
+import "./Whatsnew.css";
 
 const paintings = [
   {
